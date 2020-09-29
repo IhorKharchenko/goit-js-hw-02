@@ -34,7 +34,7 @@ function addLogin(logins, login) {
   return message;
 }
 
-let logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
+const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 
 console.log(addLogin(logins, "Ajax"));
 // 'Логин успешно добавлен!'
