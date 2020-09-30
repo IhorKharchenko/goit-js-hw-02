@@ -1,12 +1,16 @@
 function checkForSpam(str) {
   "use strict";
   // Write code under this line
+  const spam = ["spam", "sale"];
   str = str.toLowerCase();
-  if (str.includes("spam") || str.includes("sale")) {
-    return true;
-  } else {
-    return false;
+  for (const spamWord of spam) {
+    if (str.includes(spamWord)) {
+      return true;
+    } else {
+      continue;
+    }
   }
+  return false;
 }
 
 console.log(checkForSpam("Latest technology news")); // false
